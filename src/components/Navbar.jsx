@@ -9,8 +9,8 @@ const Navbar = ({ dark, setDark }) => {
     return (
         <div className={`w-full relative ${dark ? 'bg-gray-900 z-[1] text-slate-50 shadow-slate-600' : 'bg-slate-200 shadow-slate-300'} py-2 text-[1.3rem] shadow-lg  flex`}>
             <div className={`w-full md:w-10/12 mx-auto overflow-y-hidden flex flex-row items-center justify-between px-4`}>
-                <div className='cursor-pointer'>
-                    PORTFOLIO
+                <div className='cursor-pointer bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient font-extrabold  text-[2rem]'>
+                    Portfolio
                 </div>
 
                 <div className='absolute right-10 top-1 block md:hidden z-[10]'>

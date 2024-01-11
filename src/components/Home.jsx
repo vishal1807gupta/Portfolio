@@ -1,24 +1,32 @@
-import React from 'react'
-import '../index.css'
+import React, { useEffect } from 'react'
 import TypingAnimation from './TypingAnimation'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { social } from '../data/socialLinkData';
 const Home = ({ dark }) => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div id='home' className={`pt-10 relative w-full  ${dark ? 'dark' : 'light'}`}>
 
             <div className='w-full md:w-10/12  h-full mx-auto gap-4 flex flex-col md:flex-row  px-4  '>
-                <div className='z-[2] w-full py-20  flex flex-col gap-y-6 items-center md:items-start  justify-center overflow-hidden'>
+                <div className='z-[2] w-full py-20  flex flex-col gap-y-6 items-center md:items-start  justify-center '>
 
-                    <div className='text-[3rem]   flex flex-col gap-4 w-full'>
+                    <div data-aos="fade-right" data-aos-delay="300"
+                        className='text-[3rem]   flex flex-col gap-4 w-full'>
                         <p>Hey! I'm</p>
                         <p className={`${dark ? 'text-pink-600' : 'text-sky-600 '} tracking-wide font-bold text-[2rem] md:text-[3rem]`}>Deepanshu Singhal</p>
                     </div>
 
-                    <div className='w-full'>
+                    <div
+                        data-aos="fade-right" data-aos-delay="350"
+                        className='w-full'>
                         <TypingAnimation />
                     </div>
 
-                    <div className='w-full my-5 flex flex-row  md:items-center gap-x-12 text-[1.2rem]'>
+                    <div data-aos="fade-up" data-aos-delay="250"
+                        className='w-full my-5 flex flex-row  md:items-center gap-x-12 text-[1.2rem]'>
                         <div className={`w-max relative  group overflow-hidden rounded-3xl  border-2 
                         ${dark ? 'border-pink-600' : 'border-sky-500'}`}>
                             <button className={`relative group-hover:z-[2] px-4 py-1 ${dark ? 'text-slate-100 ' : 'text-slate-800 '}  transition-all duration-300`}>
@@ -37,27 +45,46 @@ const Home = ({ dark }) => {
                         </div>
                     </div>
 
-                    <div className='w-full flex flex-col justify-center'>
-                        <p className='md:ml-4 text-[1.2rem]'>FIND ME IN </p>
+                    <div
+                        className='w-full flex flex-col justify-center'>
+                        <p data-aos="fade-right" data-aos-delay="350" className='md:ml-4 text-[1.2rem]'>FIND ME IN </p>
                         <div className='flex flex-row gap-2 justify-between  w-full md:w-max items-center '>
-                            <div className='max-w-[80px] cursor-pointer hover:scale-75 transition-all duration-300'>
-                                <img src={require('../assets/Instagram.png')} loading="lazy"  alt="Insta"/>
+                            <div
+                                data-aos="zoom-in" data-aos-delay="400"
+                                className='max-w-[80px] cursor-pointer'>
+                                <a href={social.instagram}>
+                                    <img src={require('../assets/Instagram.png')} loading="lazy" alt="Insta"
+                                        className='hover:scale-75 transition-all duration-300' />
+                                </a>
                             </div>
-                            <div className='max-w-[80px] cursor-pointer hover:scale-75 transition-all duration-300'>
-                                <img src={require('../assets/LinkedIn.png')} loading="lazy" alt="linked" />
+                            <div
+                                data-aos="zoom-in" data-aos-delay="450"
+                                className='max-w-[80px] cursor-pointer '>
+                                <a href={social.linkedin}><img src={require('../assets/LinkedIn.png')} loading="lazy" alt="linked"
+                                    className='hover:scale-75 transition-all duration-300' /></a>
                             </div>
-                            <div className='max-w-[80px] cursor-pointer hover:scale-75 transition-all duration-300'>
-                                <img src={require('../assets/Telegram.png')} loading="lazy" alt="telegram" />
+                            <div
+                                data-aos="zoom-in" data-aos-delay="500"
+                                className='max-w-[80px] cursor-pointer'>
+                                <a href={social.gmail}>
+                                    <img src={require('../assets/Gmail.png')} loading="lazy" alt="telegram"
+                                        className='hover:scale-75 transition-all duration-300' />
+                                </a>
                             </div>
-                            <div className='max-w-[80px] cursor-pointer hover:scale-75 transition-all duration-300'>
-                                <img src={require('../assets/X.png')} loading="lazy" alt="twitter" />
+                            <div
+                                data-aos="zoom-in" data-aos-delay="550"
+                                className='max-w-[80px] cursor-pointer'>
+                                <a href={social.github}>
+                                    <img src={require('../assets/github.png')} loading="lazy" alt="twitter" className='hover:scale-75 transition-all duration-300' /></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className='relative w-full min-h-[34vh] '>
-                    <div className='max-w-[400px] flex items-center justify-center absolute bottom-0'>
+                    <div
+                        data-aos="zoom-out-up" data-aos-delay="200" data-aos-duration="300"
+                        className='max-w-[400px] flex items-center justify-center absolute bottom-0'>
                         <img
                             src={require('../assets/awesomeImg.png')}
                             loading='lazy'
