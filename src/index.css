@@ -4,25 +4,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,500&family=Titillium+Web:ital,wght@1,200;1,300;1,400&family=Ubuntu&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 
 html {
     scroll-behavior: smooth;
     user-select: none;
 }
 
-.dark{
+.dark {
     background: #000000f0;
     color: white;
 }
-.light{
+
+.light {
     background-color: whitesmoke;
     color: '#0000000';
 }
 
-.darkImg{
-    filter: drop-shadow(20px -5px 55px  #92cbe1);
+.darkImg {
+    filter: drop-shadow(20px -5px 55px #92cbe1);
 }
-.lightImg{
+
+.lightImg {
     filter: drop-shadow(20px -5px 55px #87CEEB);
 }
 
@@ -44,5 +49,39 @@ html {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+
+.animate-bubble {
+    -webkit-animation: animatedbubble 2s ease-in-out infinite alternate-reverse;
+    -moz-animation: animatedbubble 2s ease-in-out infinite alternate-reverse;
+    animation: animatedbubble 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes animatedbubble {
+    0% {
+        top: -4;
+        right: -2;
+    }
+
+    25% {
+        top: -2;
+        right: -4;
+    }
+
+    50% {
+        top: 0;
+        right: -2;
+    }
+
+    75% {
+        top: -2;
+        right: 0;
+    }
+
+    100% {
+        top: -4;
+        right: -2;
     }
 }

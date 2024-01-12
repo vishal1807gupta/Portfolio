@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif'],
+        'heading': ['Great Vibes', 'cursive'],
+        'subheading': ['Grape Nuts', 'cursive'],
       },
     },
   },

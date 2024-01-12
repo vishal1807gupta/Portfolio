@@ -18,7 +18,7 @@ const ContactUsForm = ({ dark }) => {
             const response = await axios.post('https://portfolio-backend-unmo.onrender.com/send-email', data);
             response?.data?.success ? toast.success("Message sent ") : toast.error("Message failed ")
         } catch (e) {
-            console.log("Not send the message");
+            // console.log("Not send the message");
             toast.error("Message failed")
         }
         setLoading(false);
@@ -37,6 +37,7 @@ const ContactUsForm = ({ dark }) => {
         <form onSubmit={handleSubmit(submitContactForm)}
             className={`w-full flex flex-col gap-4 px-2 md:px-4 rounded-xl  py-6 text-[1rem] ${dark ? 'dark' : 'light'}`}>
 
+            <div className='text-[2rem]  text-center'>Let's Talk</div>
 
             <div div className='relative w-full '>
                 <label htmlFor='name' >Name<sup className='text-pink-100'>*</sup> </label>

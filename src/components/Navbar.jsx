@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Sling as Hamburger } from 'hamburger-react'
 import { MdOutlineLightMode } from "react-icons/md";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import NavComponent from './NavComponent';
 
 const Navbar = ({ dark, setDark }) => {
 
@@ -19,54 +20,23 @@ const Navbar = ({ dark, setDark }) => {
 
 
                 <div className={`absolute  right-0 top-12 min-h-[80vh]   z-[100]  backdrop-blur-2xl w-full flex items-center justify-center  ${!isOpen ? ' translate-x-[100%]' : 'translate-x-0'}  duration-300 transition-all`} onClick={() => setOpen(false)}>
-                    <div className={`w-full  flex flex-col gap-y-6 `}>
-                        <div className='w-max relative group overflow-hidden mx-auto'>
-                            <div className='w-full h-[0.1rem] bg-sky-700 absolute bottom-0 translate-x-[-100%] group-hover:translate-x-0  transition-all duration-300' />
-                            <a href="#home" className=' hover:text-sky-700  rounded-3xl px-3 transition-all duration-300'>HOME</a>
-                        </div>
-
-                        <div className='w-max relative group overflow-hidden mx-auto'>
-                            <div className='w-full h-[0.1rem] bg-sky-700 absolute bottom-0 translate-x-[-100%] group-hover:translate-x-0  transition-all duration-300' />
-                            <a href="#about" className=' hover:text-sky-700  rounded-3xl px-3 transition-all duration-300'>ABOUT</a>
-                        </div>
-
-                        <div className='w-max relative group overflow-hidden mx-auto'>
-                            <div className='w-full h-[0.1rem] bg-sky-700 absolute bottom-0 translate-x-[-100%] group-hover:translate-x-0  transition-all duration-300' />
-                            <a href="#projects" className=' hover:text-sky-700  rounded-3xl px-3 transition-all duration-300'>PROJECTS</a>
-                        </div>
-
-                        <div className='w-max relative group overflow-hidden mx-auto'>
-                            <div className='w-full h-[0.1rem] bg-sky-700 absolute bottom-0 translate-x-[-100%] group-hover:translate-x-0  transition-all duration-300' />
-                            <a href="#contact" className=' hover:text-sky-700  rounded-3xl px-3 transition-all duration-300'>CONTACT</a>
-                        </div>
-
+                    <div className={`w-full h-[88vh] flex flex-col gap-y-6 items-center justify-center `}>
+                        <NavComponent component={{ target: 'home', heading: "HOME" }} />
+                        <NavComponent component={{ target: 'education', heading: "LEARNINGS" }} />
+                        <NavComponent component={{ target: 'projects', heading: "PROJECTS" }} />
+                        <NavComponent component={{ target: 'certification', heading: "CERTIFICATION" }} />
+                        <NavComponent component={{ target: 'contact', heading: "CONTACT" }} />
                     </div>
                 </div>
 
 
                 {/* Large screen size */}
-                <div className='gap-x-6 hidden md:flex flex-row'>
-
-                    <div className='w-max relative group overflow-hidden'>
-                        <div className='w-full h-[0.1rem] bg-sky-700 absolute bottom-0 translate-x-[-100%] group-hover:translate-x-0  transition-all duration-300' />
-                        <a href="#home" className=' hover:text-sky-700  rounded-3xl px-3 transition-all duration-300'>HOME</a>
-                    </div>
-
-                    <div className='w-max relative group overflow-hidden'>
-                        <div className='w-full h-[0.1rem] bg-sky-700 absolute bottom-0 translate-x-[-100%] group-hover:translate-x-0  transition-all duration-300' />
-                        <a href="#about" className=' hover:text-sky-700  rounded-3xl px-3 transition-all duration-300'>ABOUT</a>
-                    </div>
-
-                    <div className='w-max relative group overflow-hidden'>
-                        <div className='w-full h-[0.1rem] bg-sky-700 absolute bottom-0 translate-x-[-100%] group-hover:translate-x-0  transition-all duration-300' />
-                        <a href="#projects" className=' hover:text-sky-700  rounded-3xl px-3 transition-all duration-300'>PROJECTS</a>
-                    </div>
-
-                    <div className='w-max relative group overflow-hidden'>
-                        <div className='w-full h-[0.1rem] bg-sky-700 absolute bottom-0 translate-x-[-100%] group-hover:translate-x-0  transition-all duration-300' />
-                        <a href="#contact" className=' hover:text-sky-700  rounded-3xl px-3 transition-all duration-300'>CONTACT</a>
-                    </div>
-
+                <div className='gap-x-6 hidden md:flex flex-row overflow-hidden'>
+                    <NavComponent component={{ target: 'home', heading: "HOME" }} />
+                    <NavComponent component={{ target: 'education', heading: "LEARNINGS" }} />
+                    <NavComponent component={{ target: 'projects', heading: "PROJECTS" }} />
+                    <NavComponent component={{ target: 'certification', heading: "CERTIFICATION" }} />
+                    <NavComponent component={{ target: 'contact', heading: "CONTACT" }} />
                 </div>
 
 

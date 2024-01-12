@@ -1,24 +1,42 @@
 import React from 'react'
 import { social } from '../data/socialLinkData'
+import { AiFillInstagram, AiFillLinkedin, AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
+import { BiLogoGmail } from "react-icons/bi";
+import { BsWhatsapp } from "react-icons/bs";
+
+
+
+
 const Footer = ({ dark }) => {
   return (
     <div className={`w-full h-max  ${dark ? 'dark' : 'light'}`}>
       <div className={`w-full md:w-10/12 mx-auto h-[1px] ${dark ? 'bg-slate-400' : 'bg-slate-900'}`} />
       <div className={`w-full md:w-10/12  max-w-[600px] mx-auto py-6 px-2`} >
 
-        <div className='flex flex-row gap-2 justify-around px-4   w-full md:w-max items-center  mx-auto'>
-          <div className='max-w-[80px] cursor-pointer hover:scale-75 transition-all duration-300'>
-            <a href={social.instagram}><img src={require('../assets/Instagram.png')} loading="lazy" alt="Insta" /></a>
+        <div className='flex flex-row gap-6 justify-around px-4 w-max items-center  mx-auto'>
+          <div className='text-[2rem] cursor-pointer  duration-300'>
+            <a href={social.instagram} target='_blank'>
+              <AiFillInstagram />
+            </a>
           </div>
-          <div className='max-w-[80px] cursor-pointer hover:scale-75 transition-all duration-300'>
-            <a href={social.linkedin}><img src={require('../assets/LinkedIn.png')} loading="lazy" alt="linked" /></a>
+          <div className='text-[2rem]  cursor-pointer  duration-300'>
+            <a href={social.linkedin} target='_blank'>
+              <AiFillLinkedin />
+            </a>
           </div>
-          <div className='max-w-[80px] cursor-pointer hover:scale-75 transition-all duration-300'>
-            <a href={social.gmail}><img src={require('../assets/Gmail.png')} loading="lazy" alt="telegram" /></a>
+          <div className='text-[2rem]  cursor-pointer  duration-300'>
+            <a href={social.gmail} target='_blank'>
+              <BiLogoGmail />
+            </a>
           </div>
-          <div className='max-w-[80px] cursor-pointer hover:scale-75 transition-all duration-300'>
-            <a href={social.github}>
-              <img src={require('../assets/github.png')} loading="lazy" alt="twitter" />
+          <div className='text-[2rem] cursor-pointer  duration-300'>
+            <a href={social.github} target='_blank'>
+              <AiFillGithub />
+            </a>
+          </div>
+          <div className='text-[2rem] cursor-pointer  duration-300'>
+            <a href={social.whatsapp} target='_blank'>
+              <AiOutlineWhatsApp />
             </a>
           </div>
         </div>

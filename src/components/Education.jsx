@@ -3,14 +3,22 @@ import EducationCard from './EducationCard';
 import AchievementCard from './AchievementCard';
 import { achievements } from '../data/achievementData';
 import { education } from '../data/educationData';
-const About = ({ dark }) => {
+const Education = ({ dark }) => {
     const [active, setActive] = useState("Education")
 
 
     return (
-        <div id='about' className={`relative w-full pt-20 min-h-[50vh]  ${dark ? 'dark' : 'light'} `}>
+        <div id='education' className={`relative w-full pt-20 min-h-[50vh]  ${dark ? 'dark' : 'light'} `}>
             <div className='w-full md:w-10/12   h-full mx-auto gap-10 flex flex-col  px-4  '>
-                <div className=' font-semibold'>Education Qualification</div>
+                <div className=' font-semibold flex gap-8'>
+                    <div className='flex gap-4 relative max-w-max'>
+                        <div className='z-[2]'>Academia </div>
+                        <div className={`${dark ? 'bg-pink-400' : 'bg-sky-400'}  absolute w-12 aspect-square -right-4 -top-3 opacity-50 rounded-full animate-bubble`}></div>
+                    </div>
+
+                    <div className={` font-subheading scale-125 ${dark ? 'text-green-600' : 'text-sky-600'}`}> Highlights</div>
+
+                </div>
                 <div className='relative w-full max-w-[95%] md:max-w-[700px] md:mx-auto'>
 
                     <div className='w-full px-8 h-max  flex  flex-row items-center gap-x-6 justify-around text-[1.2rem] py-2 '>
@@ -60,4 +68,4 @@ const About = ({ dark }) => {
     )
 }
 
-export default About;
+export default Education;

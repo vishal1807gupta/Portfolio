@@ -6,7 +6,7 @@ const TypingAnimation = () => {
             <TypeAnimation
                 sequence={[
 
-                    `Coding Enthusaist . . .`,
+                    `Coding Enthusiast . . .`,
                     1000,
                     `Programmer . . .`,
                     1000,
@@ -15,7 +15,7 @@ const TypingAnimation = () => {
                 ]}
                 wrapper="span"
                 speed={50}
-                style={{ fontSize: '1.9rem', display: 'inline-block'}}
+                style={{ fontSize: '1.9rem', display: 'inline-block' }}
                 repeat={Infinity}
             />
         </>
