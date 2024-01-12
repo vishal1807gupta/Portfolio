@@ -1,15 +1,15 @@
 import React from 'react'
-import { certificates } from '../data/certificationData'
-import CertificateCard from './CertificateCard'
+import { rankings } from '../data/Ranking'
+import CertificateCard from './CertificateCard';
 
-const Certification = ({ dark }) => {
+const Ranking = ({ dark }) => {
     return (
-        <div id='certification' className={`relative w-full py-20  md:py-20   ${dark ? 'dark' : 'light'}`}>
+        <div id='rankings' className={`relative w-full py-20  md:py-20   ${dark ? 'dark' : 'light'}`}>
             <div className='w-full md:w-10/12  h-full mx-auto gap-10 flex flex-col px-4  '>
 
                 <div className=' font-semibold flex gap-8'>
                     <div className='flex gap-4 relative max-w-max'>
-                        <div className='z-[2]'>Certification</div>
+                        <div className='z-[2]'>Ranking</div>
                         <div className={`${dark ? 'bg-pink-400' : 'bg-sky-400'} animate-bubble  absolute w-12 aspect-square -right-4 -top-3 opacity-50 rounded-full`}></div>
                     </div>
 
@@ -17,8 +17,8 @@ const Certification = ({ dark }) => {
 
                 </div>
 
-                <div className='flex flex-wrap gap-8 w-full'>
-                    {certificates?.map((certificate, i) => <div className='w-full max-w-[390px]'><CertificateCard dark={dark} certificate={certificate} key={i} /></div>)}
+                <div className='flex flex-col md:flex-row flex-wrap  gap-x-3 gap-y-10 w-full items-center justify-around '>
+                    {rankings?.map((rank, i) => <div className='w-full md:max-w-[45%] h-max'><CertificateCard dark={dark} certificate={rank} key={i} /></div>)}
                 </div>
             </div>
 
@@ -26,4 +26,5 @@ const Certification = ({ dark }) => {
     )
 }
 
-export default Certification
+export default Ranking
+

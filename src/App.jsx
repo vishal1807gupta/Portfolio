@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Certification from "./components/Certification";
+import Ranking from "./components/Ranking";
 
 function App() {
   const [dark, setDark] = useState(true);
@@ -18,6 +19,7 @@ function App() {
       <About dark={dark} />
       <Projects dark={dark} />
       <Certification dark={dark} />
+      <Ranking dark={dark} />
       <Contact dark={dark} />
       <Footer dark={dark} />
     </div>
