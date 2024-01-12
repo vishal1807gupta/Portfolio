@@ -85,3 +85,9 @@ html {
         right: -2;
     }
 }
+
+.blur {
+    background-image: url('./assets/blur.jpg');
+    background-size: cover;
+background-position: center;
+}

@@ -18,8 +18,11 @@ const Projects = ({ dark }) => {
 
                 </div>
 
-                <div className='flex flex-wrap gap-8 w-full'>
-                    {projects?.map((project, i) => <ProjectCard dark={dark} project={project} key={i} />)}
+                <div className='flex flex-wrap gap-8 w-full  items-center '>
+                    {projects?.map((project, i) => <div className='w-full  lg:max-w-[390px]'>
+                        <ProjectCard dark={dark} project={project} key={i} />
+
+                    </div>)}
                 </div>
             </div>
 

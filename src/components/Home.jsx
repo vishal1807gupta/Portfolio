@@ -3,6 +3,7 @@ import TypingAnimation from './TypingAnimation'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { social } from '../data/socialLinkData';
+
 const Home = ({ dark }) => {
     useEffect(() => {
         AOS.init();

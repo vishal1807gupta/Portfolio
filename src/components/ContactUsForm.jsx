@@ -37,7 +37,7 @@ const ContactUsForm = ({ dark }) => {
         <form onSubmit={handleSubmit(submitContactForm)}
             className={`w-full flex flex-col gap-4 px-2 md:px-4 rounded-xl  py-6 text-[1rem] ${dark ? 'dark' : 'light'}`}>
 
-            <div className='text-[2rem]  text-center'>Let's Talk</div>
+            <div className='text-[2rem]  text-center underline underline-offset-8'>Let's Talk</div>
 
             <div div className='relative w-full '>
                 <label htmlFor='name' >Name<sup className='text-pink-100'>*</sup> </label>

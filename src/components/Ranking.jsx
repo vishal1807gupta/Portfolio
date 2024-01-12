@@ -18,7 +18,7 @@ const Ranking = ({ dark }) => {
                 </div>
 
                 <div className='flex flex-col md:flex-row flex-wrap  gap-x-3 gap-y-10 w-full items-center justify-around '>
-                    {rankings?.map((rank, i) => <div className='w-full md:max-w-[45%] h-max'><CertificateCard dark={dark} certificate={rank} key={i} /></div>)}
+                    {rankings?.map((rank, i) => <div className='w-full lg:max-w-[40%] h-max'><CertificateCard dark={dark} certificate={rank} key={i} /></div>)}
                 </div>
             </div>
 

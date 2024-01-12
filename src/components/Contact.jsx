@@ -24,7 +24,7 @@ const Contact = ({ dark }) => {
 
                 </div>
 
-                <div className='w-full flex flex-col md:flex-row gap-6 '>
+                <div className='w-full flex flex-col lg:flex-row gap-6 gap-y-10 '>
                     <div className='max-w-max flex items-center justify-center  mx-auto'
                         data-aos="fade-right">
                         <div className={`max-w-max flex flex-col gap-4  justify-center  text-[1rem] shadow-sm  rounded-3xl ${dark ? 'border-slate-400 shadow-slate-100' : 'border-slate-800 shadow-slate-800'} py-10 px-4 md:px-10  `}>
