@@ -19,7 +19,7 @@ const Education = ({ dark }) => {
                     <div className={` font-subheading scale-125 ${dark ? 'text-green-600' : 'text-sky-600'}`}> Highlights</div>
 
                 </div>
-                <div className='relative w-full max-w-[95%] md:max-w-[700px] md:mx-auto'>
+                <div className='relative w-full max-w-[95%] md:w-[70%] md:mx-auto'>
 
                     <div className='w-full px-8 h-max  flex  flex-row items-center md:gap-x-6 justify-around text-[1.2rem] py-2 '>
                         <div className={`w-max border ${active === "Education" ? dark ? ' border-pink-600' : ' border-sky-500' : 'border-hidden'} py-1 my-1 mx-2 px-5 rounded-xl duration-300 transition-all`}

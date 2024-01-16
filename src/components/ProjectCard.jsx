@@ -13,7 +13,7 @@ const ProjectCard = ({ dark, project }) => {
             data-aos-delay={`${delay}`}>
             <div
 
-                className={`w-full  ${dark ? 'bg-slate-900 shadow-stone-600' : 'bg-slate-300'} shadow-md cursor-pointer  overflow-hidden rounded-3xl  hover:opacity-70 transition-all duration-300`}>
+                className={`w-full ${dark ? 'bg-slate-900 shadow-stone-600' : 'bg-slate-300'} shadow-md cursor-pointer  overflow-hidden rounded-3xl  hover:opacity-70 transition-all duration-300`}>
 
                 <div className=' w-full flex flex-col gap-y-4  '>
 
@@ -28,18 +28,18 @@ const ProjectCard = ({ dark, project }) => {
 
                     <div className='flex flex-col px-6 pb-4'>
                         <div className='flex flex-row items-center justify-between'>
-                            <div className={`text-[1.5rem] font-semibold tracking-wider ${dark ? 'text-pink-600' : 'text-blue-700'}`}>{title}</div>
+                            <div className={`text-[1.2rem] font-semibold tracking-wider ${dark ? 'text-pink-600' : 'text-blue-700'}`}>{title}</div>
                             <div className='  flex items-center justify-center gap-4'>
                                 <a href={sourceCode} target='_blank' rel="noopener noreferrer" className='hover:scale-90 duration-300  transition-all'>
-                                    <FaGithub />
+                                    <FaGithub  size={'1.8rem'}/>
                                 </a>
                                 <a href={liveView} target='_blank' rel="noopener noreferrer" className='hover:scale-90 duration-300  transition-all'>
-                                    <MdArrowOutward size={'2.4rem'} />
+                                    <MdArrowOutward size={'2rem'} />
                                 </a>
                             </div>
                         </div>
                         <div className='text-[1rem] opacity-75'>{desc}</div>
-                        <div className='text-[1.1rem] '>{techStack}</div>
+                        <div className='text-[0.8rem] '>{techStack}</div>
                     </div>
                 </div>
 

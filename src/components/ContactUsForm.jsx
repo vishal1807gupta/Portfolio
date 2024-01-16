@@ -35,7 +35,7 @@ const ContactUsForm = ({ dark }) => {
     }, [isSubmitSuccessful, reset])
     return (
         <form onSubmit={handleSubmit(submitContactForm)}
-            className={`w-full flex flex-col gap-4 px-2 md:px-4 rounded-xl  py-6 text-[1rem] ${dark ? 'dark' : 'light'}`}>
+            className={`w-full flex flex-col gap-4 px-2 md:px-4 rounded-xl  py-6 text-[1rem] ${dark ? 'dark' : ' bg-stone-200'}`}>
 
             <div className='text-[2rem]  text-center underline underline-offset-8'>Let's Talk</div>
 
@@ -47,7 +47,7 @@ const ContactUsForm = ({ dark }) => {
                     placeholder='Name'
                     id='name'
                     {...register("name", { required: true })}
-                    className={`w-full rounded-[0.5rem]  px-2 py-0 ${dark ? ' placeholder:text-slate-200 text-slate-200 bg-stone-800' : 'placeholder:text-slate-800 text-slate-800 '}`}
+                    className={`w-full rounded-[0.5rem]  px-2 py-0 ${dark ? ' placeholder:text-slate-200 text-slate-200 bg-stone-800' : 'placeholder:text-slate-800 text-slate-800 bg-stone-100'}`}
                 />
                 {
                     errors.name && (
@@ -65,7 +65,7 @@ const ContactUsForm = ({ dark }) => {
                     placeholder='Email'
                     id='email'
                     {...register("email", { required: true })}
-                    className={`w-full rounded-[0.5rem]  px-2 py-0 ${dark ? ' placeholder:text-slate-200 text-slate-200 bg-stone-800' : 'placeholder:text-slate-800 text-slate-800 '}`}
+                    className={`w-full rounded-[0.5rem]  px-2 py-0 ${dark ? ' placeholder:text-slate-200 text-slate-200 bg-stone-800' : 'placeholder:text-slate-800 text-slate-800 bg-stone-100'}`}
                 />
                 {
                     errors.email && (
@@ -83,11 +83,11 @@ const ContactUsForm = ({ dark }) => {
                     placeholder='Write your message here....'
                     id='message'
                     {...register("message", { required: true })}
-                    className={`w-full rounded-[0.5rem]  px-2 py-0 ${dark ? ' placeholder:text-slate-200 text-slate-200 bg-stone-800' : 'placeholder:text-slate-800 text-slate-800 '}`}
+                    className={`w-full rounded-[0.5rem]  px-2 py-0 ${dark ? ' placeholder:text-slate-200 text-slate-200 bg-stone-800' : 'placeholder:text-slate-800 text-slate-800 bg-stone-100'}`}
                 />
                 {
                     errors.message && (
-                        <div className='text-xs w-full absolute bottom-0  translate-y-[120%] text-red-500 left-2'> Please enter your Message</div>
+                        <div className='text-xs w-full absolute bottom-0  translate-y-[70%] text-red-500 left-2'> Please enter your Message</div>
                     )
                 }
             </div>

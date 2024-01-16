@@ -17,8 +17,8 @@ const Certification = ({ dark }) => {
 
                 </div>
 
-                <div className='flex flex-wrap gap-8 w-full justify-center items-center'>
-                    {certificates?.map((certificate, i) => <div className='w-full lg:max-w-[390px]'><CertificateCard dark={dark} certificate={certificate} key={i} /></div>)}
+                <div className='flex flex-wrap gap-8 w-full  justify-center items-center'>
+                    {certificates?.map((certificate, i) => <div className='w-full lg:max-w-[45%] xl:max-w-[30%]'><CertificateCard dark={dark} certificate={certificate} key={i} /></div>)}
                 </div>
             </div>
 

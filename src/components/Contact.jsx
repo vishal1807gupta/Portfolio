@@ -17,7 +17,7 @@ const Contact = ({ dark }) => {
                 <div className=' font-semibold flex gap-8'>
                     <div className='flex gap-4 relative max-w-max'>
                         <div className='z-[2]'>Contact</div>
-                        <div className={`${dark ? 'bg-pink-400' : 'bg-sky-400'}  absolute w-12 aspect-square -right-4 -top-3 opacity-50 rounded-full`}></div>
+                        <div className={`${dark ? 'bg-pink-400' : 'bg-sky-400'}  absolute w-12 aspect-square -right-4 -top-3 opacity-50 rounded-full animate-bubble`}></div>
                     </div>
 
                     <div className={` font-subheading scale-125 ${dark ? 'text-green-600' : 'text-sky-600'}`}>Me</div>

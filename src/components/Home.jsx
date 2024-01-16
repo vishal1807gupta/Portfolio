@@ -11,8 +11,8 @@ const Home = ({ dark }) => {
     return (
         <div id='home' className={`pt-4 relative w-full  ${dark ? 'dark' : 'light'}`}>
 
-            <div className='w-full md:w-10/12  h-full mx-auto gap-4 flex flex-col md:flex-row  px-4  '>
-                <div className='z-[2] w-full pt-10 pb-20  flex flex-col gap-y-6 md:items-start  justify-center  '>
+            <div className='w-full md:w-10/12  mx-auto gap-4 flex flex-col md:flex-row  px-4  '>
+                <div className='z-[2] w-full pt-10  flex flex-col gap-y-6 md:items-start  justify-center  '>
 
                     <div data-aos="fade-right" data-aos-delay="300"
                         className='text-[2rem]   flex flex-col gap-4 w-full'>
@@ -83,15 +83,15 @@ const Home = ({ dark }) => {
                     </div>
                 </div>
 
-                <div className='relative w-full min-h-[40vh] '>
+                <div className='relative w-full min-h-[45vh] '>
                     <div
                         data-aos="zoom-out-up"  data-aos-duration="400"
-                        className='max-w-[400px] flex items-center justify-center absolute bottom-0'>
+                        className='  w-full flex items-center justify-center absolute bottom-0'>
                         <img
                             src={require('../assets/awesomeImg.png')}
                             loading='lazy'
                             alt="Deepanshu"
-                            className={`${dark ? 'darkImg' : 'lightImg'}`}
+                            className={`${dark ? 'darkImg' : 'lightImg'} mx-auto max-w-[400px]`}
                         />
                     </div>
                 </div>
