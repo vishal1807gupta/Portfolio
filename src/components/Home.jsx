@@ -9,7 +9,7 @@ const Home = ({ dark }) => {
         AOS.init();
     }, [])
     return (
-        <div id='home' className={`pt-10 relative w-full  ${dark ? 'dark' : 'light'}`}>
+        <div id='home' className={`pt-4 relative w-full  ${dark ? 'dark' : 'light'}`}>
 
             <div className='w-full md:w-10/12  h-full mx-auto gap-4 flex flex-col md:flex-row  px-4  '>
                 <div className='z-[2] w-full pt-10 pb-20  flex flex-col gap-y-6 md:items-start  justify-center  '>
@@ -27,7 +27,7 @@ const Home = ({ dark }) => {
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="250"
-                        className='w-full my-5 flex flex-row  md:items-center gap-x-12 text-[1.2rem]'>
+                        className='w-full my-5 flex flex-row  gap-x-6 md:gap-x-12  md:items-center   text-[1.2rem]'>
                         <div className={`w-max relative  group overflow-hidden rounded-3xl  border-2 
                         ${dark ? 'border-pink-600' : 'border-sky-500'}`}>
                             <button className={`relative group-hover:z-[2] px-4 py-1 ${dark ? 'text-slate-100 ' : 'text-slate-800 '}  transition-all duration-300`}>
@@ -50,14 +50,7 @@ const Home = ({ dark }) => {
                         className='w-full flex flex-col justify-center max-w-[350px]  '>
                         <p data-aos="fade-right" data-aos-delay="350" className='md:ml-4 text-[1.2rem]'>FIND ME ON </p>
                         <div className='flex flex-row gap-2 justify-between  w-full md:w-max items-center '>
-                            <div
-                                data-aos="zoom-in" data-aos-delay="400"
-                                className='max-w-[60px] cursor-pointer'>
-                                <a href={social.instagram}>
-                                    <img src={require('../assets/Instagram.png')} loading="lazy" alt="Insta"
-                                        className='hover:scale-75 transition-all duration-300' />
-                                </a>
-                            </div>
+
                             <div
                                 data-aos="zoom-in" data-aos-delay="450"
                                 className='max-w-[60px] cursor-pointer '>
@@ -77,6 +70,14 @@ const Home = ({ dark }) => {
                                 className='max-w-[50px] cursor-pointer'>
                                 <a href={social.github}>
                                     <img src={require('../assets/github.png')} loading="lazy" alt="twitter" className='hover:scale-75 transition-all duration-300' /></a>
+                            </div>
+                            <div
+                                data-aos="zoom-in" data-aos-delay="600"
+                                className='max-w-[60px] cursor-pointer'>
+                                <a href={social.instagram}>
+                                    <img src={require('../assets/Instagram.png')} loading="lazy" alt="Insta"
+                                        className='hover:scale-75 transition-all duration-300' />
+                                </a>
                             </div>
                         </div>
                     </div>

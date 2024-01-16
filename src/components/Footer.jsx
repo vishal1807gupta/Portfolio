@@ -2,10 +2,6 @@ import React from 'react'
 import { social } from '../data/socialLinkData'
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
 import { BiLogoGmail } from "react-icons/bi";
-import { BsWhatsapp } from "react-icons/bs";
-
-
-
 
 const Footer = ({ dark }) => {
   return (
@@ -14,29 +10,29 @@ const Footer = ({ dark }) => {
       <div className={`w-full md:w-10/12  max-w-[600px] mx-auto py-6 px-2`} >
 
         <div className='flex flex-row gap-6 justify-around px-4 w-max items-center  mx-auto'>
-          <div className='text-[2rem] cursor-pointer  duration-300'>
-            <a href={social.instagram} target='_blank'>
-              <AiFillInstagram />
-            </a>
-          </div>
           <div className='text-[2rem]  cursor-pointer  duration-300'>
-            <a href={social.linkedin} target='_blank'>
+            <a href={social.linkedin} target='_blank' rel="noopener noreferrer">
               <AiFillLinkedin />
             </a>
           </div>
           <div className='text-[2rem]  cursor-pointer  duration-300'>
-            <a href={social.gmail} target='_blank'>
+            <a href={social.gmail} target='_blank' rel="noopener noreferrer">
               <BiLogoGmail />
             </a>
           </div>
           <div className='text-[2rem] cursor-pointer  duration-300'>
-            <a href={social.github} target='_blank'>
+            <a href={social.github} target='_blank' rel="noopener noreferrer">
               <AiFillGithub />
             </a>
           </div>
           <div className='text-[2rem] cursor-pointer  duration-300'>
-            <a href={social.whatsapp} target='_blank'>
+            <a href={social.whatsapp} target='_blank' rel="noopener noreferrer">
               <AiOutlineWhatsApp />
+            </a>
+          </div>
+          <div className='text-[2rem] cursor-pointer  duration-300'>
+            <a href={social.instagram} target='_blank' rel="noopener noreferrer">
+              <AiFillInstagram />
             </a>
           </div>
         </div>
