@@ -88,5 +88,33 @@ html {
 .blur {
     background-image: url('./assets/blur.jpg');
     background-size: cover;
-background-position: center;
+    background-position: center;
+}
+
+.splash {
+    -webkit-animation: splash 1.5s linear;
+    -moz-animation: splash 1.5s linear;
+    animation: splash 1.5s linear;
+}
+
+@keyframes splash {
+    0% {
+        scale: 0;
+    }
+
+    25% {
+        scale: .5;
+    }
+
+    50% {
+        scale: 1;
+    }
+
+    75% {
+        scale: 1.5;
+    }
+
+    100% {
+        scale: 2;
+    }
 }

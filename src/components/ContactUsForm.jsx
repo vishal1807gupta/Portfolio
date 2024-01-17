@@ -39,25 +39,26 @@ const ContactUsForm = ({ dark }) => {
 
             <div className='text-[2rem]  text-center underline underline-offset-8'>Let's Talk</div>
 
-            <div div className='relative w-full '>
-                <label htmlFor='name' >Name<sup className='text-pink-100'>*</sup> </label>
+            <div className='relative w-full '>
+                <label htmlFor='name'>Name<sup className='text-pink-100'>*</sup> </label>
                 <input
                     type="text"
                     name="name"
                     placeholder='Name'
                     id='name'
                     {...register("name", { required: true })}
-                    className={`w-full rounded-[0.5rem]  px-2 py-0 ${dark ? ' placeholder:text-slate-200 text-slate-200 bg-stone-800' : 'placeholder:text-slate-800 text-slate-800 bg-stone-100'}`}
+                    className={`w-full rounded-[0.5rem] px-2 py-0 ${dark ? 'placeholder:text-slate-200 text-slate-200 bg-stone-800' : 'placeholder:text-slate-800 text-slate-800 bg-stone-100'}`}
                 />
                 {
                     errors.name && (
-                        <div className='text-xs w-full absolute bottom-0  translate-y-[120%] text-red-500 left-2'> Please enter your Name</div>
+                        <div className='text-xs w-full absolute bottom-0 translate-y-[120%] text-red-500 left-2'> Please enter your Name</div>
                     )
                 }
             </div>
 
 
-            <div div className='relative w-full '>
+
+            <div  className='relative w-full '>
                 <label htmlFor='email' >Email<sup className='text-pink-100'>*</sup> </label>
                 <input
                     type="email"
@@ -74,7 +75,7 @@ const ContactUsForm = ({ dark }) => {
                 }
             </div>
 
-            <div div className='relative w-full '>
+            <div  className='relative w-full '>
                 <label htmlFor='message' >Message<sup className='text-pink-100'>*</sup> </label>
                 <textarea
                     rows={2}
