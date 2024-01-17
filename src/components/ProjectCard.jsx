@@ -38,7 +38,7 @@ const ProjectCard = ({ dark, project }) => {
                                 </a>
                             </div>
                         </div>
-                        <div className='text-[1rem] opacity-75'>{desc}</div>
+                        <div className='text-[0.8rem] opacity-75 leading-4 mt-3'>{desc}</div>
                         <div className='text-[0.8rem] '>{techStack}</div>
                     </div>
                 </div>

@@ -24,7 +24,7 @@ const CertificateCard = ({ dark, certificate }) => {
                             className='bg-cover aspect-video' />
                     </div>
                     <div className='flex flex-col px-2'>
-                        <div className={`text-[1rem] text-center font-semibold tracking-wider ${dark ? 'text-pink-600' : 'text-blue-700'}`}>
+                        <div className={`text-[1rem] text-center font-semibold  ${dark ? 'text-pink-600' : 'text-blue-700'}`}>
                             {title}
                         </div>
                     </div>

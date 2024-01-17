@@ -1,14 +1,14 @@
 export const achievements = [
     {
-        title: "Codeforces Pupil Max(1407)"
+        title: `Achieved the rank of "Codeforces Pupil" with a maximum rating of 1407.`
     },
     {
-        title: "3star at CodeChef"
+        title: `Attained the status of a "3-star Coder" on CodeChef.`
     },
     {
-        title: "Solved 800+ problems on Leetcode"
+        title: `Successfully solved over 800 problems on LeetCode.`
     },
     {
-        title: "Top 5% at Leetcode "
+        title: `Recognized as a Knight on LeetCode, Ranking in the Top 5%`
     }
 ]
