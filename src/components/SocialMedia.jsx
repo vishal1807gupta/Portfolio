@@ -9,7 +9,7 @@ const SocialMedia = () => {
                     <div key={index}
                         data-aos="zoom-in" data-aos-delay="450"
                         className='max-w-12 cursor-pointer '>
-                        <a href={socialItem.link}><img src={socialItem.img} loading="lazy" alt="linked"
+                        <a href={socialItem.link}><img src={(socialItem.img)} loading="lazy" alt="linked"
                             className='hover:scale-75 transition-all duration-300' /></a>
                     </div>
                 ))
