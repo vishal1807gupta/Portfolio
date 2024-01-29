@@ -10,7 +10,7 @@ const Home = ({ dark }) => {
     }, [])
     return (
         <div id='home' className={`pt-4 relative w-full  ${dark ? 'dark' : 'light'} pb-10`} >
-            
+
 
             <div className='w-full md:w-10/12  mx-auto gap-4 flex flex-col md:flex-row  px-4  '>
                 <div className='z-[2] w-full pt-28  flex flex-col gap-y-6 md:items-start  justify-center  '>
@@ -52,7 +52,7 @@ const Home = ({ dark }) => {
                         <p data-aos="fade-right" data-aos-delay="350" className='md:ml-4 text-[1.2rem]'>FIND ME ON </p>
                         <div className='flex flex-row gap-2 justify-between  w-full md:w-max items-center '>
                             <Suspense fallback={<></>}>
-                                {/* <SocialMedia /> */}
+                                <SocialMedia />
                             </Suspense>
                         </div>
                     </div>
