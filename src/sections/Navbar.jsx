@@ -8,7 +8,7 @@ const Navbar = ({ dark, setDark }) => {
 
     const [isOpen, setOpen] = useState(false)
     return (
-        <div className={`z-[10]   md:w-11/12 mx-auto rounded-3xl  ${dark ? 'shadow-[#eb26fd] ' : 'shadow-[#9184db]'}  relative  ${isOpen ? dark ? 'dark' : 'light' : 'backdrop-blur-2xl'}   py-4 text-[1.3rem] shadow-sm  flex`}>
+        <div className={`z-[10]   md:w-11/12 mx-auto rounded-3xl  ${dark ? 'shadow-[#eb26fd] ' : 'shadow-[#9184db]'}  relative  ${isOpen ? dark ? 'dark' : 'light' : 'backdrop-blur-2xl'}   py-4 md:py-2 text-[1.3rem] shadow-sm  flex`}>
 
             <div className={`w-full md:w-10/12 mx-auto overflow-y-hidden flex flex-row items-center   justify-between px-4 `}>
                 <div className='cursor-pointer bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient font-extrabold  text-[2rem] flex gap-3 items-center '>

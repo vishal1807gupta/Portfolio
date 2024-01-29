@@ -11,27 +11,27 @@ const Footer = ({ dark }) => {
 
         <div className='flex flex-row gap-6 justify-around px-4 w-max items-center  mx-auto'>
           <div className='text-[2rem]  cursor-pointer  duration-300'>
-            <a href={social.linkedin} target='_blank' rel="noopener noreferrer">
+            <a href={social[1].link} target='_blank' rel="noopener noreferrer">
               <AiFillLinkedin />
             </a>
           </div>
           <div className='text-[2rem]  cursor-pointer  duration-300'>
-            <a href={social.gmail} target='_blank' rel="noopener noreferrer">
+            <a href={social[4].link} target='_blank' rel="noopener noreferrer">
               <BiLogoGmail />
             </a>
           </div>
           <div className='text-[2rem] cursor-pointer  duration-300'>
-            <a href={social.github} target='_blank' rel="noopener noreferrer">
+            <a href={social[0].link} target='_blank' rel="noopener noreferrer">
               <AiFillGithub />
             </a>
           </div>
           <div className='text-[2rem] cursor-pointer  duration-300'>
-            <a href={social.whatsapp} target='_blank' rel="noopener noreferrer">
+            <a href={social[4].link} target='_blank' rel="noopener noreferrer">
               <AiOutlineWhatsApp />
             </a>
           </div>
           <div className='text-[2rem] cursor-pointer  duration-300'>
-            <a href={social.instagram} target='_blank' rel="noopener noreferrer">
+            <a href={social[2].link} target='_blank' rel="noopener noreferrer">
               <AiFillInstagram />
             </a>
           </div>

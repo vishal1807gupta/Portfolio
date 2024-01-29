@@ -60,7 +60,7 @@ const Home = ({ dark }) => {
 
 
                 <div className='relative w-full min-h-[60vh] '>
-                    <div className='animate-backdrop absolute w-[250px] md:w-[400px] aspect-square rounded-full    bg-[#eb26fd] z-1 blur-[130px]' />
+                    <div className='animate-backdrop absolute w-[250px] md:w-[350px] aspect-square rounded-full    bg-[#eb26fd] z-1 blur-[130px]' />
                     <Suspense fallback={<p>Loading Img</p>}>
                         <ProfileImg dark={dark} />
                     </Suspense>
