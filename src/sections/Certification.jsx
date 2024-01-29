@@ -1,6 +1,6 @@
 import React from 'react'
 import { certificates } from '../data/certificationData'
-import CertificateCard from './CertificateCard'
+import CertificateCard from '../components/CertificateCard'
 
 const Certification = ({ dark }) => {
     return (

@@ -1,6 +1,6 @@
-import React from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import React, { Suspense } from 'react'
+const LoadImage = React.lazy(() => import('./LoadImage'));
+
 const CertificateCard = ({ dark, certificate }) => {
     const { title, image, enterAnimation, delay } = certificate ?? {};
     return (
@@ -10,18 +10,17 @@ const CertificateCard = ({ dark, certificate }) => {
             data-aos-delay={`${delay}`}>
             <div
 
-                className={`w-full     ${dark ? 'bg-slate-900 shadow-yellow-600' : 'bg-slate-300'} shadow-md  sha cursor-pointer  overflow-hidden rounded-3xl  hover:shadow-none duration-300 transition-shadow  `}>
+                className={`relative group w-full     ${dark ? 'bg-slate-900 shadow-yellow-600' : 'bg-slate-300'}   cursor-pointer  overflow-hidden rounded-3xl`}>
+                
+                <div className={`absolute w-1/3 md:w-1/3 aspect-square rounded-full  top-[50%]  left-[50%] translate-x-[50%] translate-y-[50%] ${dark ? 'bg-[#eb26fd]' : 'bg-[#4942E4]'}  blur-[100px] group-hover:translate-x-[-100%] group-hover:translate-y-[10%] transition-all duration-300`} />
 
                 <div className=' w-full flex flex-col gap-y-2  '>
 
-                   
+
                     <div className='relative group w-full  overflow-hidden aspect-video rounded-t-3xl'>
-                        <LazyLoadImage
-                            effect="blur"
-                            height={image.height}
-                            src={image}
-                            width={image.width}
-                            className='bg-cover aspect-video' />
+                        <Suspense fallback={<><img src={require('../assets/Spinner.svg')} /></>}>
+                            <LoadImage srcPath={image} />
+                        </Suspense>
                     </div>
                     <div className='flex flex-col px-2'>
                         <div className={`text-[1rem] text-center font-semibold  ${dark ? 'text-pink-600' : 'text-blue-700'}`}>

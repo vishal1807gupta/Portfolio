@@ -7,11 +7,11 @@ const TypingAnimation = () => {
                 sequence={[
 
                     `Coding Enthusiast . . .`,
-                    1000,
+                    800,
                     `Programmer . . .`,
-                    1000,
-                    'Full Stack Developer . .',
-                    1000,
+                    800,
+                    'Full Stack Developer..',
+                    800,
                 ]}
                 wrapper="span"
                 speed={50}

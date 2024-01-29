@@ -1,19 +1,19 @@
 import React from 'react'
-import ContactUsForm from './ContactUsForm'
-
+import ContactUsForm from '../form/ContactUsForm'
 const Contact = ({ dark }) => {
+
     const aboutMe = {
         intro: "Deepanshu Singhal",
-        current: "Pursuing B.Tech in CSE from NSUT ",
-        info: "I am a full stack developer",
-        email: "deepanshusinghal2003@gmail.com",
-        location: "New Delhi, IN"
+        current: `Pursuing <b>B.Tech</b> in CSE from <br/>Netaji Subhas University Of Technology<b>`,
+        info: "Full Stack Developer ",
+        email: `Email: <b>deepanshusinghal2003@gmail.com</b>`,
+        location: "Location: <b>New Delhi, IN </b>"
     }
 
     return (
         <div id='contact' className={`relative w-full py-20 min-h-[50vh]  ${dark ? 'dark' : 'light'} overflow-hidden`
         }>
-            <div className='w-full md:w-10/12  h-full mx-auto gap-10 flex flex-col  px-1 md:px-4  '>
+            <div className=' w-full md:w-10/12  h-full mx-auto gap-10 flex flex-col  px-1 md:px-4  '>
                 <div className=' font-semibold flex gap-8'>
                     <div className='flex gap-4 relative max-w-max'>
                         <div className='z-[2]'>Contact</div>
@@ -25,15 +25,17 @@ const Contact = ({ dark }) => {
                 </div>
 
                 <div className='w-full flex flex-col lg:flex-row gap-6 gap-y-10 '>
-                    <div className='max-w-max flex items-center justify-center  mx-auto'
+                    <div className='relative max-w-max flex items-center justify-center  mx-auto group'
                         data-aos="fade-right">
+                        {/* drop shadow */}
+                        <div className={`absolute w-1/2 md:w-1/2 aspect-square rounded-full  top-[20%]  left-[20%]  ${dark ? 'bg-[#eb26fd]' : 'bg-[#4942E4]'}  blur-[100px] group-hover:translate-x-[30%] group-hover:translate-y-[10%] transition-all duration-500`} />
                         <div className={`max-w-max flex flex-col gap-4  justify-center  text-[1rem] shadow-sm  rounded-3xl ${dark ? 'border-slate-400 shadow-slate-100' : 'border-slate-800 shadow-slate-800'} py-10 px-4 md:px-10  `}>
                             <div className={`text-[2.5rem] w-max ${dark ? 'text-pink-600' : 'text-sky-600'} font-semibold tracking-widest  font-heading `}>
                                 {aboutMe?.intro}</div>
                             <div className='text-[1.4rem]'>{aboutMe?.info}</div>
-                            <div> {aboutMe?.current}</div>
-                            <div>Email : {aboutMe?.email}</div>
-                            <div>Location : {aboutMe?.location}</div>
+                            <div dangerouslySetInnerHTML={{ __html: aboutMe?.current }} />
+                            <div dangerouslySetInnerHTML={{ __html: aboutMe?.email }} />
+                            <div dangerouslySetInnerHTML={{ __html: aboutMe?.location }} />
                         </div>
                     </div>
 

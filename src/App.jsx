@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import About from "./components/Education";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Certification from "./components/Certification";
-import Ranking from "./components/Ranking";
+import Home from "./sections/Home";
+import Navbar from "./sections/Navbar";
+import About from "./sections/Education";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+import Certification from "./sections/Certification";
+import Ranking from "./sections/Ranking";
 
 function App() {
   const [dark, setDark] = useState(true);
@@ -24,10 +24,11 @@ function App() {
             </div>
           </div>
         ) : (
-          <div className={`text-3xl w-full pt-10 ${dark ? 'dark' : 'light'} overflow-hidden`}>
-            <div className="fixed w-full z-[100]  top-0 bg-black">
-              <Navbar dark={dark} setDark={setDark} />
-            </div>
+          <div className={`text-3xl w-full  ${dark ? 'dark ' : 'light'} overflow-hidden`}>
+              
+              <div className="fixed w-full z-[100] top-6  px-2">
+                <Navbar dark={dark} setDark={setDark} />
+              </div>
             <Home dark={dark} />
             <About dark={dark} />
             <Projects dark={dark} />

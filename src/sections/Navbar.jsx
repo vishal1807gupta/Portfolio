@@ -2,24 +2,26 @@ import React, { useState } from 'react'
 import { Sling as Hamburger } from 'hamburger-react'
 import { MdOutlineLightMode } from "react-icons/md";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import NavComponent from './NavComponent';
+import NavComponent from '../components/NavComponent';
 
 const Navbar = ({ dark, setDark }) => {
 
     const [isOpen, setOpen] = useState(false)
     return (
-        <div className={`w-full relative ${dark ? 'bg-gray-900 z-[1] text-slate-50 shadow-slate-600' : 'bg-slate-200 shadow-slate-300'} py-2 text-[1.3rem] shadow-lg  flex`}>
-            <div className={`w-full md:w-10/12 mx-auto overflow-y-hidden flex flex-row items-center justify-between px-4 `}>
-                <div className='cursor-pointer bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient font-extrabold  text-[2rem]'>
-                    <a href="#home" className='font-logo tracking-widest text-[2.2rem]  shadow-2xl'>Portfolio</a>
+        <div className={`z-[10]   md:w-11/12 mx-auto rounded-3xl  ${dark ? 'shadow-[#eb26fd] ' : 'shadow-[#9184db]'}  relative  ${isOpen ? dark ? 'dark' : 'light' : 'backdrop-blur-2xl'}   py-4 text-[1.3rem] shadow-sm  flex`}>
+
+            <div className={`w-full md:w-10/12 mx-auto overflow-y-hidden flex flex-row items-center   justify-between px-4 `}>
+                <div className='cursor-pointer bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient font-extrabold  text-[2rem] flex gap-3 items-center '>
+                    <img src={require('../assets/awesomeImg.png')} alt="Logo" className='w-12 aspect-square rounded-full ' />
+                    <a href="#home" className='font-logo  text-[2.2rem]   '>Deepanshu</a>
                 </div>
 
-                <div className='absolute right-10 top-1 block md:hidden z-[10]'>
+                <div className='absolute right-10 mr-1 block md:hidden z-[10]'>
                     < Hamburger toggled={isOpen} toggle={setOpen} size={25} />
                 </div>
 
 
-                <div className={`absolute  right-0 top-12 min-h-[80vh]   z-[100]  backdrop-blur-2xl w-full flex items-center justify-center  ${!isOpen ? ' translate-x-[100%]' : 'translate-x-0'}  duration-300 transition-all`} onClick={() => setOpen(false)}>
+                <div className={`absolute  right-0 top-20 min-h-[80vh]   z-[10]  backdrop-blur-2xl w-full flex items-center justify-center  ${!isOpen ? ' translate-x-[120%]' : 'translate-x-0'}  duration-300 transition-all`} onClick={() => setOpen(false)}>
                     <div className={`w-full h-[88vh] flex flex-col gap-y-6 items-center justify-center `}>
                         <NavComponent component={{ target: 'home', heading: "HOME" }} />
                         <NavComponent component={{ target: 'education', heading: "LEARNINGS" }} />

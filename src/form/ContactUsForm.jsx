@@ -14,13 +14,14 @@ const ContactUsForm = ({ dark }) => {
 
     const submitContactForm = async (data) => {
         setLoading(true);
+        const loadingToast = toast.loading("Loading...");
         try {
             const response = await axios.post('https://portfolio-backend-unmo.onrender.com/send-email', data);
             response?.data?.success ? toast.success("Message sent ") : toast.error("Message failed ")
         } catch (e) {
-            // console.log("Not send the message");
-            toast.error("Message failed")
+            toast.error("Message not sent")
         }
+        toast.dismiss(loadingToast);
         setLoading(false);
     }
 

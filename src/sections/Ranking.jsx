@@ -1,6 +1,6 @@
 import React from 'react'
 import { rankings } from '../data/Ranking'
-import CertificateCard from './CertificateCard';
+import CertificateCard from '../components/CertificateCard';
 
 const Ranking = ({ dark }) => {
     return (

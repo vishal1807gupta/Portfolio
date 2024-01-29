@@ -1,11 +1,12 @@
 import React from 'react'
-import ProjectCard from './ProjectCard'
+import ProjectCard from '../components/ProjectCard'
 import { projects } from '../data/projectData'
 
 const Projects = ({ dark }) => {
 
     return (
         <div id='projects' className={`relative w-full py-20  md:py-20   ${dark ? 'dark' : 'light'}`}>
+            
             <div className='w-full md:w-10/12  h-full mx-auto gap-10 flex flex-col px-4  '>
 
                 <div className=' font-semibold flex gap-8'>

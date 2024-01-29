@@ -18,7 +18,7 @@ html {
 }
 
 .light {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(225, 223, 223);
     color: '#0000000';
 }
 
@@ -116,5 +116,37 @@ html {
 
     100% {
         scale: 2;
+    }
+}
+
+
+
+
+.animate-backdrop {
+
+    -webkit-animation: animatedbackdrop 4s linear infinite alternate-reverse;
+    -moz-animation: animatedbackdrop 4s linear infinite alternate-reverse;
+    animation: animatedbackdrop 4s linear infinite alternate-reverse;
+}
+
+@keyframes animatedbackdrop {
+    0% {
+        translate: 30% -20%;
+    }
+
+    25% {
+        translate: 15% -10%;
+    }
+
+    50% {
+        translate: 0% 0%;
+    }
+
+    75% {
+        translate: -15% 10%;
+    }
+
+    100% {
+        translate: -30% 20%;
     }
 }
