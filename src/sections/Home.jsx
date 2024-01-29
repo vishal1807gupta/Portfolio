@@ -52,7 +52,7 @@ const Home = ({ dark }) => {
                         <p data-aos="fade-right" data-aos-delay="350" className='md:ml-4 text-[1.2rem]'>FIND ME ON </p>
                         <div className='flex flex-row gap-2 justify-between  w-full md:w-max items-center '>
                             <Suspense fallback={<></>}>
-                                <SocialMedia />
+                                {/* <SocialMedia /> */}
                             </Suspense>
                         </div>
                     </div>
