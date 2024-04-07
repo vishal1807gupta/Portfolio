@@ -36,12 +36,12 @@ const ContactUsForm = ({ dark }) => {
     }, [isSubmitSuccessful, reset])
     return (
         <form onSubmit={handleSubmit(submitContactForm)}
-            className={`w-full flex flex-col gap-4 px-2 md:px-4 rounded-xl  py-6 text-[1rem] ${dark ? 'dark' : ' bg-stone-200'}`}>
+            className={`w-full flex flex-col gap-4 px-2 md:px-4 rounded-xl  py-6 text-[1rem] ${dark ? 'dark' : ' bg-slate-300'}`}>
 
             <div className='text-[2rem]  text-center underline underline-offset-8'>Let's Talk</div>
 
             <div className='relative w-full '>
-                <label htmlFor='name'>Name<sup className='text-pink-100'>*</sup> </label>
+                <label htmlFor='name'>Name <sup className='text-pink-500'>*</sup> </label>
                 <input
                     type="text"
                     name="name"
@@ -60,7 +60,7 @@ const ContactUsForm = ({ dark }) => {
 
 
             <div  className='relative w-full '>
-                <label htmlFor='email' >Email<sup className='text-pink-100'>*</sup> </label>
+                <label htmlFor='email' >Email <sup className='text-pink-500'>*</sup> </label>
                 <input
                     type="email"
                     name="email"
@@ -77,7 +77,7 @@ const ContactUsForm = ({ dark }) => {
             </div>
 
             <div  className='relative w-full '>
-                <label htmlFor='message' >Message<sup className='text-pink-100'>*</sup> </label>
+                <label htmlFor='message' >Message <sup className='text-pink-500'>*</sup> </label>
                 <textarea
                     rows={2}
                     type="text"

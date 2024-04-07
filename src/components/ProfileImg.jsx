@@ -5,7 +5,7 @@ const ProfileImg = ({ dark }) => {
     useCountUp({
         ref: 'projectCounter',
         start: 0,
-        end: 10,
+        end: 5,
         duration: 6,
         enableScrollSpy: true,
         scrollSpyDelay: 1000,

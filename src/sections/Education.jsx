@@ -44,9 +44,9 @@ const Education = ({ dark }) => {
                                 <div
                                     data-aos="fade-up"
                                     className='relative w-full ml-4' key={i}>
-                                    <div className={`z-[2] absolute inset-y-4 -left-6 animate-ping w-6 h-6 rounded-full border-2 ${dark ? 'border-slate-100 bg-pink-600' : 'border-slate-700 bg-green-300'} `} />
-                                    <div className={`z-[2] absolute inset-y-4 -left-6  w-6 h-6 rounded-full border-2 ${dark ? 'border-slate-100 bg-pink-600' : 'border-slate-700 bg-green-500'} `} />
-                                    <div className={`z-[2] absolute inset-y-6 -left-0 w-12 h-1 rounded-r-3xl   ${dark ? 'bg-purple-400' : 'bg-blue-500'}`} />
+                                    <div className={`z-[2] absolute inset-y-2 -left-6 animate-ping w-6 h-6 rounded-full border-2 ${dark ? 'border-slate-100 bg-pink-600' : 'border-slate-700 bg-green-300'} `} />
+                                    <div className={`z-[2] absolute inset-y-2 -left-6  w-6 h-6 rounded-full border-2 ${dark ? 'border-slate-100 bg-pink-600' : 'border-slate-700 bg-green-500'} `} />
+                                    <div className={`z-[2] absolute inset-y-4 -left-0 w-12 h-1 rounded-r-3xl   ${dark ? 'bg-purple-400' : 'bg-blue-500'}`} />
                                     <EducationCard dark={dark} edu={edu} />
                                 </div>
                             ))
@@ -56,9 +56,9 @@ const Education = ({ dark }) => {
                                 <div
                                     data-aos="fade-up"
                                     className='relative w-full ml-4' key={i}>
-                                    <div className={`z-[2] absolute inset-y-4 -left-6 animate-ping w-6 h-6 rounded-full border-2 ${dark ? 'border-slate-100 bg-pink-600' : 'border-slate-700 bg-green-300'} `} />
-                                    <div className={`z-[2] absolute inset-y-4 -left-6  w-6 h-6 rounded-full border-2 ${dark ? 'border-slate-100 bg-pink-600' : 'border-slate-700 bg-green-500'} `} />
-                                    <div className={`z-[2] absolute inset-y-6 -left-0 w-12 h-1 rounded-r-3xl   ${dark ? 'bg-purple-400' : 'bg-blue-500'}`} />
+                                    <div className={`z-[2] absolute inset-y-2 -left-6 animate-ping w-6 h-6 rounded-full border-2 ${dark ? 'border-slate-100 bg-pink-600' : 'border-slate-700 bg-green-300'} `} />
+                                    <div className={`z-[2] absolute inset-y-2 -left-6  w-6 h-6 rounded-full border-2 ${dark ? 'border-slate-100 bg-pink-600' : 'border-slate-700 bg-green-500'} `} />
+                                    <div className={`z-[2] absolute inset-y-4 -left-0 w-12 h-1 rounded-r-3xl   ${dark ? 'bg-purple-400' : 'bg-blue-500'}`} />
                                     <AchievementCard dark={dark} achievement={achievement} />
                                 </div>
                             ))

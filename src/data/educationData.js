@@ -3,7 +3,7 @@ export const education = [
         title: "B.Tech (CSE)",
         institute: "Netaji Subhas University Of Technology",
         duration: "2021 - 2025",
-        grade: "8.5 GPA",
+        grade: "8.42 GPA",
         percent: '80.79'
     },
     {

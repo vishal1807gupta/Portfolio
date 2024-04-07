@@ -21,7 +21,7 @@ const Ranking = ({ dark }) => {
                     {
                         rankings?.map((rank, i) =>
                             <div className='w-full lg:max-w-[35%] h-max' key={i}>
-                                <CertificateCard dark={dark} certificate={rank} />
+                                <CertificateCard dark={dark} certificate={rank} haveUrl={true} />
                             </div>)
                     }
                 </div>

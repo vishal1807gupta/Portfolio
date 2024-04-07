@@ -4,9 +4,9 @@ const Contact = ({ dark }) => {
 
     const aboutMe = {
         intro: "Deepanshu Singhal",
-        current: `Pursuing <b>B.Tech</b> in CSE from <br/>Netaji Subhas University Of Technology<b>`,
+        current: ` <b>B.Tech  CSE  NSIT<b>`,
         info: "Full Stack Developer ",
-        email: `Email: <b>deepanshusinghal2003@gmail.com</b>`,
+        email: `Email: <i>deepanshusinghal2003@gmail.com</i>`,
         location: "Location: <b>New Delhi, IN </b>"
     }
 
@@ -28,7 +28,7 @@ const Contact = ({ dark }) => {
                     <div className='relative max-w-max flex items-center justify-center  mx-auto group'
                         data-aos="fade-right">
                         {/* drop shadow */}
-                        <div className={`absolute w-1/2 md:w-1/2 aspect-square rounded-full  top-[20%]  left-[20%]  ${dark ? 'bg-[#eb26fd]' : 'bg-[#4942E4]'}  blur-[100px] group-hover:translate-x-[30%] group-hover:translate-y-[10%] transition-all duration-500`} />
+                        <div className={`absolute w-1/2 md:w-1/2 aspect-square rounded-full  top-[20%]  left-[20%]  ${dark ? 'bg-[#d580dd]' : 'bg-[#7873c4]'}  blur-[100px] group-hover:translate-x-[30%] group-hover:translate-y-[10%] transition-all duration-500`} />
                         <div className={`max-w-max flex flex-col gap-4  justify-center  text-[1rem] shadow-sm  rounded-3xl ${dark ? 'border-slate-400 shadow-slate-100' : 'border-slate-800 shadow-slate-800'} py-10 px-4 md:px-10  `}>
                             <div className={`text-[2.5rem] w-max ${dark ? 'text-pink-600' : 'text-sky-600'} font-semibold tracking-widest  font-heading `}>
                                 {aboutMe?.intro}</div>
@@ -42,7 +42,7 @@ const Contact = ({ dark }) => {
                     <div className='w-full'
                         data-aos="fade-left">
                         <div
-                            className={`w-full  shadow-md rounded-lg ${dark ? 'shadow-stone-100' : 'shadow-stone-700'}`}>
+                            className={`w-full  shadow-md rounded-lg ${dark ? 'shadow-stone-100' : 'shadow-stone-400'}`}>
                             <ContactUsForm dark={dark} />
                         </div>
                     </div>
