@@ -6,7 +6,7 @@ export const projects = [
         info: " This project includes full-stack development with integrated payment functionality",
         image: require('../assets/studyNotionImg.png'),
         sourceCode: "https://github.com/deepanshusinghal16/thestudynotion",
-        liveView: "https://studynotion-frontend.onrender.com/",
+        liveView: "https://thestudynotion.vercel.app/",
         color: 'slate-100',
         enterAnimation: 'fade-right',
         delay: 100
