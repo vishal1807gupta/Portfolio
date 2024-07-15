@@ -27,7 +27,7 @@ const ProfileImg = ({ dark }) => {
             <img
                 src={require('../assets/awesomeImg.png')}
                 loading='lazy'
-                alt="Deepanshu"
+                alt="Vishal"
                 className={` mx-auto max-w-[400px]  z-[10]`}
             />
             
@@ -36,11 +36,6 @@ const ProfileImg = ({ dark }) => {
                 <div className='flex flex-col items-center justify-center'>
                     <p className=' font-extrabold text-3xl'> <span id='projectCounter' /> + </p>
                     <p className={`${dark ? 'text-green-600' : 'text-blue-900'} text-xl font-semibold `}>Projects</p>
-                </div>
-
-                <div className='flex flex-col items-center justify-center'>
-                    <p className='font-extrabold text-3xl'> <span id='expCounter' /> Yr+ </p>
-                    <p className={`${dark ? 'text-green-600' : 'text-blue-900'} text-xl font-semibold `}>Experience</p>
                 </div>
             </div>
         </div>

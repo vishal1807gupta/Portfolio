@@ -16,7 +16,7 @@ const Footer = ({ dark }) => {
             </a>
           </div>
           <div className='text-[2rem]  cursor-pointer  duration-300'>
-            <a href={social[4].link} target='_blank' rel="noopener noreferrer">
+            <a href={social[3].link} target='_blank' rel="noopener noreferrer">
               <BiLogoGmail />
             </a>
           </div>
@@ -38,7 +38,7 @@ const Footer = ({ dark }) => {
         </div>
 
         <div className={`${dark ? 'text-slate-100' : 'text-slate-900'} text-[1rem] text-center mx-auto max-w-max py-4`}>
-          © 2024. All rights reserved by Deepanshu Singhal
+          © 2024. All rights reserved by Vishal Gupta
         </div>
 
       </div>

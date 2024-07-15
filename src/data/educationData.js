@@ -1,23 +1,23 @@
 export const education = [
     {
-        title: "B.Tech (CSE)",
+        title: "B.Tech (CSAI)",
         institute: "Netaji Subhas University Of Technology",
         duration: "2021 - 2025",
-        grade: "8.42 GPA",
+        grade: "8.27 CGPA",
         percent: '80.79'
     },
     {
         title: "CBSE XII",
-        institute: "Sant Gyaneshwar Model School",
-        duration: "2019 - 2021",
-        grade: "81.2%",
-        percent: '81'
+        institute: "Rajkiya Pratibha Vikas Vidyalaya",
+        duration: "2019 - 2020",
+        grade: "93.4%",
+        percent: '93'
     },
     {
         title: "CBSE X",
-        institute: "DAV Centenary Public School",
-        duration: "2017 - 2019",
-        grade: "92%",
-        percent: '92'
+        institute: "Adarsh Secondary School",
+        duration: "2017-2018 ",
+        grade: "89.4%",
+        percent: '90'
     },
 ]

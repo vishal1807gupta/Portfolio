@@ -20,7 +20,7 @@ function App() {
         splash ? (
           <div className={`${splash && 'w-[100vw] h-[100vh] flex items-center justify-center overflow-hidden bg-black'}`}>
             <div className={`w-[80vw] md:w-[50vw] splash  shadow-md`}>
-              <img src={require('./assets/DeepanshuSinghal.png')} className="aspect-video w-full" alt="Deepanshu Singhal" />
+              <img src={require('./assets/VG.png')} className="aspect-video w-full" alt="Vishal Gupta" />
             </div>
           </div>
         ) : (

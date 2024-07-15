@@ -18,7 +18,7 @@ const Home = ({ dark }) => {
                     <div data-aos="fade-right" data-aos-delay="300"
                         className='text-[2rem]   flex flex-col gap-4 w-full'>
                         <p>Hey! I'm</p>
-                        <p className={`${dark ? 'text-pink-600' : 'text-sky-600 '} tracking-widest font-bold text-[2.5rem]  leading-snug md:text-[3rem]    animate-pulse`}>DEEPANSHU <br /> SINGHAL</p>
+                        <p className={`${dark ? 'text-pink-600' : 'text-sky-600 '} tracking-widest font-bold text-[2.5rem]  leading-snug md:text-[3rem]    animate-pulse`}>VISHAL <br /> GUPTA</p>
                     </div>
 
                     <div
@@ -32,7 +32,7 @@ const Home = ({ dark }) => {
                         <div className={`w-max relative  group overflow-hidden rounded-3xl  border-2 
                         ${dark ? 'border-pink-600' : 'border-sky-500'}`}>
                             <button className={`relative group-hover:z-[2] px-4 py-1 ${dark ? 'text-slate-100 ' : 'text-slate-800 '}  transition-all duration-300`}>
-                                <a href={'https://drive.google.com/file/d/1eXCJvOTBdCHThZwqRXRT3HAx-COD_sv1/view?usp=sharing'}>Hire Me</a>
+                                <a href={'https://drive.google.com/file/d/1p3QnuFMkKSdhtcCq_C57dWTpjLE51hZ-/view?usp=sharing'}>Hire Me</a>
                             </button>
                             <div className={`absolute z-1 w-full top-0 translate-x-[-100%] px-2 py-1 h-full   group-hover:translate-x-0 transition-all duration-300 ${dark ? 'bg-pink-600' : 'bg-sky-500'}`}
                             />

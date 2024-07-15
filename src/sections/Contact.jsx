@@ -3,10 +3,10 @@ import ContactUsForm from '../form/ContactUsForm'
 const Contact = ({ dark }) => {
 
     const aboutMe = {
-        intro: "Deepanshu Singhal",
+        intro: "Vishal Gupta",
         current: ` <b>B.Tech  CSE  NSIT<b>`,
         info: "Full Stack Developer ",
-        email: `Email: <i>deepanshusinghal2003@gmail.com</i>`,
+        email: `Email: <i>vishal1807gupta@gmail.com</i>`,
         location: "Location: <b>New Delhi, IN </b>"
     }
 

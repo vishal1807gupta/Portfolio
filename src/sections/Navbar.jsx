@@ -13,7 +13,7 @@ const Navbar = ({ dark, setDark }) => {
             <div className={`w-full md:w-10/12 mx-auto overflow-y-hidden flex flex-row items-center   justify-between px-4 `}>
                 <div className='cursor-pointer bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient font-extrabold  text-[2rem] flex gap-3 items-center '>
                     <img src={require('../assets/awesomeImg.png')} alt="Logo" className='w-12 aspect-square rounded-full ' />
-                    <a href="#home" className='font-logo  text-[2.2rem]   '>Deepanshu</a>
+                    <a href="#home" className='font-logo  text-[2.2rem]   '>Vishal</a>
                 </div>
 
                 <div className='absolute right-10 mr-1 block md:hidden z-[10]'>
