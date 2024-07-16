@@ -1,6 +1,6 @@
 export const rankings = [
     {
-        title: "Specilist At Codeforces Max (1557)",
+        title: "Specialist At Codeforces Max (1557)",
         image: require('../assets/codeforcesRanking.png'),
         enterAnimation: 'fade-right',
         delay: 100,
